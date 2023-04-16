@@ -1,0 +1,150 @@
+.UserDetails_Wrapper{
+    position: absolute;
+    margin-top: 70px;
+    height: calc(100% - 80px);
+    // border: 1px solid;
+    width: calc(100% - 10px);
+    overflow: auto;
+    padding: 10px;
+    margin-left: 10px;
+    font-family: 'Open Sans', sans-serif !important;
+
+    &::-webkit-scrollbar {
+        width: 3px;
+        display: none;
+    }
+
+    .UserDetails_Inner_Wrapper{
+        .addbutton{
+             float: right;
+        }
+
+        button{
+            margin-right: 10px;
+            border: 0px;
+            background-color: #21263C;
+            color: #fff;
+            font-size: 12px;
+            padding: 5px 10px 5px 10px;
+            font-weight: 500;
+        }
+        .Editbuttons{
+            position: absolute;
+            display: flex;
+
+            right: 10px;
+
+            button{
+                margin-right: 10px;
+                border: 0px;
+                background-color: #21263C;
+                color: #fff;
+                font-size: 12px;
+                padding: 5px 10px 5px 10px;
+                font-weight: 500;
+            }
+        }
+        .svgbackspace{
+            position: absolute;
+            right: 8px;
+            // float: inline-start;
+            color: black;
+            margin-top: -43px;
+          }
+
+        .row{
+            width: 100%;
+            margin-left: 2px;
+        }
+        .UserDetailscard{
+            padding: 10px;
+            font-size: 12px;
+            // background-color: #F7F7FE;
+            border: 0px solid #ddd;
+            border-radius: 6px;
+            text-align: left;
+            margin-bottom: 10px;
+
+            h6{
+                margin-bottom: 20px;
+            }
+
+            p{
+                padding: 0;
+                // margin: ;
+            }
+
+            .Header{
+                font-weight: 700;
+                width: 25%;
+                float: left;
+                font-size: 13px;
+            }
+            .Content{
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+
+        .WorkoutShedules{
+            margin-top: 40px;
+        }
+
+        .reportdetails, .WorkoutShedules{
+            display: flex;
+            justify-content: center;
+            
+
+            .col-lg-6{
+                padding: 20px;
+            }
+
+            .table_container{
+                padding: 5px;
+            }
+
+            table{
+                    // box-shadow: 2px 2px 4px 1px;
+                    border: 1px solid #ddd;
+                    thead{
+                        background-color: #21263C;
+                        th{
+                            color: #fff;
+                        }
+                    }
+                    tbody{
+                        top: 0px;
+                        background-color: #fff;
+                    }
+            }
+        }
+
+        .Pagination{
+            margin-top: 20px;
+            position: relative;
+            bottom: 10px;
+            // cursor: pointer;
+            right: 10px;
+             button{
+              background-color: #21263C;
+              color: #fff;
+              border: 0px;
+              font-size: 12px;
+              padding: 4px;
+              border-radius: 2px;
+              cursor: pointer;
+              width: 30px;
+             }
+             span{
+               font-size: 12px;
+             }
+          
+             input{
+               font-size: 11px;
+               border: 1px solid #ddd;
+               text-align: center;
+               outline: none !important;
+             }
+        }
+    }
+}

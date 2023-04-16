@@ -1,0 +1,28 @@
+.Loader_Wrapper{
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: all .25s;
+
+    &.active{
+        width: calc(100% - 40px);
+        margin-left: 40px;
+    }
+    .Loader_Inner_Wrapper{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+       img{
+        width: 220px;
+        height: 220px;
+       }
+    }
+}

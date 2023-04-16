@@ -1,0 +1,225 @@
+.navbar_warpper {
+    height: 48px;
+    position: absolute;
+    // width: calc(100% - 230px);
+    width: 100%;
+    display: flex;
+    // margin-left: 230px;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+    background-color: #21263C;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    transition: all 0.25s;
+    border: 0px;
+    border-bottom: 1px solid #cccc;
+    font-family: 'Open Sans', sans-serif !important;
+  
+    .Date_Range{
+      background-color: rgba(0, 0, 0, 0);
+      border: 0pc;
+      // width: 100%;
+      font-size: 12px;
+      position: absolute;
+      text-align: left;
+      right: 0;
+      &:hover{
+          color: #fff;
+      }
+    }
+  
+    &.activate {
+      // width: calc(100% - 70px);
+      // margin-left: 70px;
+    }
+  
+    .NotifcationCenter{
+      display: block;
+      width: 200px;
+      height: 35px;
+      border-left: 1px solid gray;
+  
+      span{
+        top: 30px;
+        margin-left: 10px;
+  
+        svg{
+          margin-top: 7px;
+          width: 20px;
+          height: 20px;
+          color: #fff;
+        }
+      }
+    }
+  
+    .navbar_warpper_inner {
+      background-color: rgba(0, 0, 0, 0);
+      height: 51px;
+      width: 100%;
+      // border-radius: 8px;
+      // box-shadow: 1px 1px 4px -1px black;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .Headers {
+  
+        .Searchicon{
+          position: absolute;
+          background-color: #21263C;
+          display: none;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+          padding: 0px;
+          margin-left: 1px;
+          padding-left: 10px;
+          padding-right: 10px;
+          top: -1px;
+  
+          svg{
+            width: 15px;
+            // height: px;
+            color: white;
+          }
+        }
+        color: white;
+        width: 300px;
+        // border: 1px solid white;
+        position: relative;
+        float: left;
+        font-size: 12px;
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 6px;
+        font-size: var(--headersize1);
+        font-weight: 400;
+  
+        @media screen and (max-width: 991px) {
+          font-size: 12px;
+          width: 15%;
+        }
+  
+        input{
+          width: 100%;
+          font-size: 12px;
+          border: 1px solid #21263C;
+          border-radius: 5px;
+          padding: 5px;
+          padding-left: 40px;
+          outline: lightgray;
+          background-color: #F7F7FE;
+        }
+  
+        img{
+          margin-right: 5px;
+        }
+      }
+  
+      .search_bar {
+        width: 80%;
+        float: right;
+        // border: 1px solid white;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5px;
+  
+        .dropdown-menu {
+          &.show {
+            margin-top: 6px;
+            border-radius: 0px;
+          }
+        }
+  
+        span {
+          margin-right: 20px;
+          color: white;
+          cursor: pointer;
+  
+          a{
+              &.active{
+                 font-weight: 700;
+                 color: white;
+                 background-color: goldenrod;
+              }
+          }
+  
+          &.active{
+              color: goldenrod;
+          }
+  
+          &:hover {
+            color: goldenrod;
+          }
+  
+          @media screen and (max-width: 991px) {
+            font-size: 12px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  
+    .login_section {
+      width: 350px;
+      color: white;
+      background-color:rgba(0, 0, 0, 0) ;
+      height: 35px;
+      // border-radius: 8px;
+      margin-left: 0px;
+      margin-right: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // background-color: black;
+      font-size: 12px;
+      // box-shadow: 1px 1px 4px -1px black;
+      cursor: pointer;
+      border-left: 1px solid gray;
+  
+  
+  
+      .Profileicon{
+  
+        svg{
+          width: 30px;
+          height: 30px;
+          color: white;
+        }
+      }
+  
+      .Logout{
+        position: absolute;
+        // color: black;
+        // box-shadow: 1px 1px 4px -1px rgba(0, 0, 0, 0.5);
+        border: 0px;
+        background-color: #21263C;
+        color: white;
+        visibility: hidden;
+        margin-top: 162px;
+        width: 18%;
+        padding: 8px;
+        font-size: 12px;
+        cursor: pointer;
+  
+        .logoutButton{
+          width: 100px;
+          padding: 6px;
+          border-radius: 2px;
+          border: 0px;
+          background-color: rgba(0, 0, 0, 0);
+          color: #FC8F31;
+          font-weight: 400;
+          // margin-bottom: 10px;
+          // margin-top: 10px;
+          font-size: 12px;
+        }
+    
+        &.active{
+          visibility: visible;
+        }
+      }
+    }
+  }
+  

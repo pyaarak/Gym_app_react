@@ -1,0 +1,374 @@
+
+.Pagination{
+    margin-top: 20px;
+    position: absolute;
+    bottom: 10px;
+    // cursor: pointer;
+    right: 10px;
+     button{
+      background-color: #21263C;
+      color: #fff;
+      border: 0px;
+      font-size: 12px;
+      padding: 4px;
+      border-radius: 2px;
+      cursor: pointer;
+      width: 30px;
+     }
+     span{
+       font-size: 12px;
+     }
+  
+     input{
+       font-size: 11px;
+       border: 1px solid #ddd;
+       text-align: center;
+       outline: none !important;
+     }
+  }
+  .table_container {
+    // border-radius: 8px !important;
+    width: 100%;
+    // position: ;
+    height: 100%;
+    // margin-top: 73px;
+    overflow: auto;
+    // padding: 10px;
+  //   border-radius: 5px;
+    // box-shadow: 1px 1px 4px -1px rgba(0, 0, 0, 0.5);
+    font-family: 'Open Sans', sans-serif !important;
+  
+    &::-webkit-scrollbar {
+      width: 3px;
+      display: none;
+    }
+  
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      display: none;
+    }
+  
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+  
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  
+    table {
+      width: 100%;
+      text-align: left;
+    }
+  
+    thead {
+      // -webkit-box-shadow: 1px 1px 11px -1px rgba(0,0,0,0.75);
+      // -moz-box-shadow: 1px 1px 11px -1px rgba(0,0,0,0.75);
+      // box-shadow: 1px 1px 11px -1px rgba(0,0,0,0.75);
+      // border-radius: 5px;
+      // position: fixed;
+      border-top: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc;
+      height: 30px;
+      color: #757383;
+      font-weight: 500;
+      font-size: 11px;
+      // box-shadow: 1px 1px 7px -1px rgba(0, 0, 0, 0.5);
+      // background-color: white;
+      // z-index: 67;
+      // position: fixed;
+  
+      @media screen and (max-width: 991px) {
+        font-size: 12px;
+      }
+      // padding-left: 20px;
+      tr th {
+        //   padding: 20px 0% 20px 10px;
+        //   background-color: white;
+        // text-align: center;
+        // width: 190px;
+        // width: calc(100% - 90px);
+          // font-weight: 500;
+          padding-left: 10px;
+  
+          // &:nth-child(6){
+          //   text-align: left;
+          //   padding-left:0px;
+          // }
+  
+          // &:nth-child(7){
+          //   text-align: left;
+          //   padding-left:0px;
+          // }
+      }
+  
+      // border-top-left-radius: 5px !important;
+      // border-top-right-radius: 5px !important;
+    }
+  
+    tbody {
+      position: relative;
+      // height: 75%;
+      // width: 96%;
+      // overflow-y: auto;
+      top: 10px;
+  
+      .Date{
+        color: blue;
+        font-weight: 500;
+      }
+    }
+  
+    tbody tr {
+      border-bottom: 1px solid #d6d9dc;
+      width: 100%;
+      // position: relative;
+
+      &.active{
+        background-color: red;
+        color: white !important;
+
+        td{
+
+            .Email{
+                color: white;
+                font-weight: 600;
+            }
+    
+            .ExpiryDate{
+                color: white;
+                font-weight: 500;
+            }
+            .uniqid{
+                font-weight: 700;
+            }
+            .username{
+                font-weight: 600;
+                color: white;
+            }
+            .package{
+                font-weight: 600;
+                color: white;
+            }
+        }
+      }
+  
+      &:hover {
+        // box-shadow: 1px 1px 7px -1px rgba(0, 0, 0, 0.5);
+        transform: translate(1);
+        cursor: pointer;
+      }
+  
+      td {
+        padding: 5px 0% 10px 12px;
+        font-size: 12px;
+        // width: 200px;
+        //   text-align: center;
+        // text-align: center;
+        // img{
+        //   text-align: left !important;
+        // }
+
+        .Mobile{
+            font-weight: 700;
+        }
+
+        .Email{
+            color: gray;
+            font-weight: 600;
+        }
+
+        .ExpiryDate{
+            color: blue;
+            font-weight: 500;
+        }
+        .uniqid{
+            font-weight: 700;
+        }
+        .username{
+            font-weight: 600;
+            color: green;
+        }
+        .package{
+            font-weight: 600;
+            color: green;
+        }
+        .tracking{
+          text-align: left;
+          // margin-left: 40px;
+  
+          .track1{
+            border-left:2px dotted green;
+            span{
+               width: 10px;
+               height: 10px;
+               position: absolute;
+               background-color: green;
+              //  margin-top: 4px;
+               margin-left: -6px;
+               border-radius: 50%;
+            }
+            i{
+              position: relative;
+              top: -4px;
+              font-style: normal;
+              margin-left: 10px;
+            }
+          }
+          .track2{
+            border-left:2px dotted green;
+            span{
+               width: 10px;
+               height: 10px;
+               border-radius: 50%;
+               position: absolute;
+               background-color: green;
+               margin-top: 6px;
+               margin-left: -6px;
+            }
+            i{
+              position: relative;
+              top: 2px;
+              font-style: normal;
+              margin-left: 10px;
+            }
+          }
+          .track3{
+            border-left:2px dotted #21263C;
+            span{
+               width: 10px;
+               height: 10px;
+               border-radius: 50%;
+               position: absolute;
+               background-color: #21263C;
+               margin-top: 11px;
+               margin-left: -6px;
+            }
+            i{
+              position: relative;
+              top: 8px;
+              font-style: normal;
+              margin-left: 10px;
+            }
+          }
+  
+          .track4{
+            border-left:2px dotted green;
+            span{
+               width: 10px;
+               height: 10px;
+               border-radius: 50%;
+               position: absolute;
+               background-color: green;
+               margin-top: 11px;
+               margin-left: -6px;
+            }
+            i{
+              position: relative;
+              top: 7px;
+              font-style: normal;
+              margin-left: 10px;
+            }
+          }
+        }
+  
+        .Initialvalue{
+          span{
+            font-weight: 600;
+            color: green;
+            margin-right: 5px;
+          }
+          color: green;
+        }
+        .Finalvalue{
+          span{
+            font-weight: 600;
+            color: red;
+            margin-right: 5px;
+          }
+          color: red;
+        }
+        .tracking1{
+          text-align: left;
+          // margin-left: 40px;
+  
+          .track1{
+            border-left:2px dotted green;
+            span{
+               width: 10px;
+               height: 10px;
+               border-radius: 50%;
+               position: absolute;
+               background-color: green;
+              //  margin-top: 4px;
+               margin-left: -6px;
+            }
+            i{
+              position: relative;
+              top: -7px;
+              font-style: normal;
+              margin-left: 10px;
+            }
+          }
+          .track2{
+            border-left:2px dotted #21263C;
+            span{
+               width: 10px;
+               height: 10px;
+               border-radius: 50%;
+               position: absolute;
+               background-color: #21263C;
+               margin-top: 12px;
+               margin-left: -6px;
+            }
+            i{
+              position: relative;
+              top: 5px;
+              font-style: normal;
+              margin-left: 10px;
+            }
+          }
+          // .track3{
+          //   border-left:2px dotted;
+          //   span{
+          //      width: 10px;
+          //      height: 10px;
+          //      position: absolute;
+          //      background-color: #757575;
+          //      margin-top: 11px;
+          //      margin-left: -6px;
+          //   }
+          //   i{
+          //     position: relative;
+          //     top: 5px;
+          //     font-style: normal;
+          //     margin-left: 10px;
+          //   }
+          // }
+        }
+        .UniqID{
+          font-weight: 700;
+          color: black;
+  
+          &.color{
+            color: green;
+          }
+        }
+        .Name{
+          font-weight: 700;
+        }
+        .email{
+          font-weight: 600;
+          color: goldenrod;
+        }
+        .phone{
+          font-weight: 500;
+          color: #757575;
+        }
+      }
+    }
+  }
+  
