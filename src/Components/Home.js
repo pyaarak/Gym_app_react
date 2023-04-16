@@ -88,6 +88,7 @@ export default function Home(props) {
         Cell:(row)=>(
             <div className='Contacts'>
               <div className='username'>{row.row.original.name}</div>
+              <div className='username'>{"Weight : "}{row.row.original.weight}</div>
             </div>
         )
     },
@@ -111,7 +112,7 @@ export default function Home(props) {
         )
     },
     {
-        Header: "Expiray Date",
+        Header: "Expiry Date",
         accessor: "expirydate",
         Cell:(row)=>(
             <div className='Contacts'>

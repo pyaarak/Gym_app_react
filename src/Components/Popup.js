@@ -16,7 +16,7 @@ export default function Popup(props) {
   const [PackageVal, setPackageval] = useState();
   const [Options1, setOptions1] = useState([]);
   const [Gender, setGender] = useState();
-  const [UserDetails, setUserDetails] = useState({name:"",email:"",contact:"",gender:"",expirydate:"",package:"",status:1})
+  const [UserDetails, setUserDetails] = useState({name:"",email:"",contact:"",gender:"",expirydate:"",package:"",status:1,weight:""})
 
 
 
@@ -141,6 +141,13 @@ export default function Popup(props) {
           placeholder="Contact.."
           value={UserDetails.contact}
           name="contact"
+          onChange={(e) => handleChange1(e)}
+        ></input>
+        <input
+          className="Inputfield"
+          placeholder="Weight.."
+          value={UserDetails.weight}
+          name="weight"
           onChange={(e) => handleChange1(e)}
         ></input>
         <Select

@@ -19,7 +19,7 @@ export default function Popup1(props) {
   const [Document, setDoc]=useState([]);
   const [Totalval, setTotalval] = useState("");
   const [UserDetails, setUserDetails] = useState({User_id:"",Date:"",Day:"",trainername:"",musclegroup:""})
-  const [UserDetails1, setUserDetails1] = useState({User_id:"",email:"",report_document:"",reportcycle:""})
+  const [UserDetails1, setUserDetails1] = useState({User_id:"",email:"",report_document:"",reportcycle:"",weight:""})
   const [UserDetails2, setUserDetails2] = useState({User_id:"",email:"",attendance_document:"",attandancecycle:""})
 
   const onSubmit=(e)=>{
@@ -30,6 +30,7 @@ export default function Popup1(props) {
         formData.append("reportcycle",UserDetails1.reportcycle);
         formData.append("User_id",UserDetails1.User_id);
         formData.append("email", UserDetails1.email);
+        formData.append("weight",UserDetails1.weight);
         axios({method:"post",url:URL.URL1+"Report",data:formData,headers:{Authorization:"Bearer "+props.accessToken,"Content-Type":"application/JSON"}}).then((response)=>{
           // console.log(response)
           props.setReportAdd(false)
@@ -261,6 +262,13 @@ export default function Popup1(props) {
            // value={UserDetails.name}
            type="file"
            name="report_document"
+           onChange={(e) => handleChange3(e)}
+         ></input>
+         <input
+           className="Inputfield"
+           placeholder="weight.."
+           value={UserDetails1.weight}
+           name="weight"
            onChange={(e) => handleChange3(e)}
          ></input>
          <input

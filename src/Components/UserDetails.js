@@ -128,6 +128,7 @@ export default function UserDetails(props) {
         Cell:(row)=>(
             <div className='Contacts'>
               <div className='package' onClick={e=>{window.open(row.row.original.report_document)}}><FileDownloadIcon></FileDownloadIcon></div>
+              <div>{"Weight :"}{row.row.original.weight}</div>
             </div>
         )
     },
